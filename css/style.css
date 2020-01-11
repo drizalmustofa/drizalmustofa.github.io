@@ -1,0 +1,222 @@
+html{
+	position: relative;
+	/*scroll-behavior: smooth;*/
+}
+
+
+/*Jumbotron*/
+.jumbotron{
+	background-image: url('../img/bgjumbotron2.jpg');
+	/*background-attachment: fixed;*/
+	background-size: cover;
+	height: 570px;
+	background-position: 0 -70px;
+	position: relative;
+}
+
+/*.jumbotron .container{
+	z-index: 1;
+	position: relative;
+	color: white;
+}
+
+.jumbotron::after{
+	content:'';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)); 
+	position: absolute;
+	bottom: 0;
+
+}*/
+
+.jumbotron .display-4{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 210px;
+	font-weight: 200;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+.jumbotron .lead{
+	font-size: 18px;
+	color: #00000;
+	text-align: center;
+
+}
+
+.jumbotron p  {
+	color: #00000;
+	font-size: 18px;
+}
+
+
+.jumbotron .my-4{
+	width: 290px;
+	color: #585858;
+	border-color: white;
+	border-top: 2px solid #eaeaea;
+}
+
+
+.card .display-4{
+	font-size: 30px;
+
+}
+
+
+
+
+/*About*/
+.pKiri, .pKanan{
+	opacity: 0;
+	transform: translate(-50px, 0px);
+	transition: .1s;
+}
+
+.pKanan{
+	transform: translate(50px, 0px);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+/*Service*/
+.service .itemServc{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.service .itemServc.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+/*Product*/
+.product .img-thumbnail{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.product .img-thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+.testi .rounded-circle{
+	width: 40%;
+	margin-bottom: 20px;
+
+}
+
+.testimonial{
+	background-color: #cce5f3;
+	margin-bottom: 20px;
+}
+
+
+hr{
+	width: 100px;
+	border-top: 3px solid #333;
+	margin-top: -2px;
+
+}
+
+section{
+	min-height: 650px;
+}
+
+
+
+
+/*DESKTOP*/
+@media (min-width: 992px){
+
+
+.nav-link{
+	text-transform: uppercase;
+}
+
+.active, .nav-link:hover{
+	border-bottom: 2px solid blue;
+	/*background-color:#d35400;*/
+	/*background-size: 100%;*/
+    /*color:solid #black;*/
+
+}
+
+/*.active{
+	border-bottom: 2px solid blue;
+	opacity: 0;
+}
+
+.active.gMuncul{
+	opacity: 1;
+}*/
+
+
+.jumbotron{
+	margin-top: -20px;
+	background-size: cover;
+	height: 670px;
+	background-position: 0 -90px;
+	position: relative;
+}
+
+.jumbotron .display-4{
+	font-size: 36px;
+	text-align: center;
+	margin-top: 135px;
+	margin-left: 580px;
+	font-weight: 200;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+.jumbotron .lead{
+	margin-left: 580px;
+	font-size: 18px;
+	color: #00000;
+	text-align: center;
+
+}
+
+.jumbotron p  {
+	margin-left: 580px;
+	color: #00000;
+	font-size: 18px;
+
+}
+
+.jumbotron a{
+	margin-left: 580px;
+
+}
+
+.jumbotron .my-4{
+	margin-left: 580px;
+	width: 480px;
+	color: #585858;
+	border-color: white;
+}
+
+.card {
+	margin-top: -100px;
+}
+
+.testi .rounded-circle{
+	width: 90%;
+}
+
+}
